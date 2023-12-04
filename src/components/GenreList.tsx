@@ -6,7 +6,6 @@ import {
   ListItem,
   Spinner,
   Button,
-  Box,
 } from "@chakra-ui/react";
 import useGenres, { Genre } from "../hooks/useGenres";
 import getCroppedImageUrl from "../services/image-url";
@@ -40,6 +39,8 @@ const GenreList = ({ selectedGenre, onSelectedGenre }: Props) => {
                 onClick={() => onSelectedGenre(genre)}
                 fontSize="lg"
                 variant="link"
+                whiteSpace="normal"
+                textAlign="left"
               >
                 {genre.name}
               </Button>
