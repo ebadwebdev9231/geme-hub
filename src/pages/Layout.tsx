@@ -4,12 +4,12 @@ import { Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
-    <>
+    <Box padding={{ base: 3, md: 6 }}>
       <Navbar />
-      <Box padding={5}>
+      <Box paddingY={3}>
         <Outlet />
       </Box>
-    </>
+    </Box>
   );
 };
 
