@@ -1,13 +1,13 @@
 import { useQuery } from "@tanstack/react-query";
-import Screenshot from "../entities/Screenshot";
 import ClientApi from "../services/client-api";
+import ScreenShot from "../entities/ScreenShot";
 
-const useScreenshots = (gameId: number) => {
-  const clientApi = new ClientApi<Screenshot>(`games/${gameId}/screenshots`);
+const useScreenShots = (gameId: number) => {
+  const clientApi = new ClientApi<ScreenShot>(`games/${gameId}/screenshots`);
   return useQuery({
     queryKey: ["screenshots", gameId],
     queryFn: clientApi.getAll,
   });
 };
 
-export default useScreenshots;
+export default useScreenShots;

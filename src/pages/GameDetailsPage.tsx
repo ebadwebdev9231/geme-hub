@@ -4,7 +4,7 @@ import ExpandableText from "../components/ExpandableText";
 import GameAttributes from "../components/GameAttributes";
 import useGame from "../hooks/useGame";
 import GameTrailer from "../components/GameTrailer";
-import GameScreenshot from "../components/GameScreenshot";
+import GameScreenShot from "../components/GameScreenShot";
 
 const GameDetailsPage = () => {
   const { slug } = useParams();
@@ -22,7 +22,7 @@ const GameDetailsPage = () => {
       </GridItem>
       <GridItem>
         <GameTrailer gameId={game.id} />
-        <GameScreenshot gameId={game.id} />
+        <GameScreenShot gameId={game.id} />
       </GridItem>
     </SimpleGrid>
   );
