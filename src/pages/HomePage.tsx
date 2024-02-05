@@ -14,7 +14,7 @@ const HomePage = () => {
       }}
       templateColumns={{
         base: "1fr",
-        lg: "230px 1fr",
+        lg: "240px 1fr",
       }}
     >
       <Show above="lg">
